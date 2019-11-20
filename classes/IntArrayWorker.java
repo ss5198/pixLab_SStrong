@@ -115,8 +115,8 @@ public class IntArrayWorker
       int large = Integer.MIN_VALUE;
       for (int i = 0; i < arr.length; i++) {
           for (int ii = 0; i < arr[i].length; i++) {
-              if (arr[i][ii] == val) {
-                  large =;
+              if (arr[i][ii] > large) {
+                  large = arr[i][ii] ;
               }
           }
       }
